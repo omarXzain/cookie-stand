@@ -99,7 +99,7 @@ for (var index = 0; index < totalArray.length; index++) {
 
 
 
-=======
+
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
@@ -111,12 +111,13 @@ function getRandomInt(max) {
 
 
 
+// eslint-disable-next-line no-redeclare
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-=======
+
 
 
 //--------------------------------------------------
