@@ -2,6 +2,7 @@
 
 var hours = ['6:00 am', '7:00 am', '8:00 am', '9:00 am', '10:00 am', '11:00 am', '12:00 pm', '1:00 pm', '2:00 pm', '3:00 pm', '4:00 pm', '5:00 pm', '6:00 pm', '7:00 pm'];
 
+
 var divTable = document.getElementById('divTable');
 
 var table = document.createElement('table');
@@ -98,6 +99,13 @@ for (var index = 0; index < totalArray.length; index++) {
 
 
 
+=======
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+
 
 
 
@@ -108,3 +116,11 @@ function getRandomInt(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+=======
+
+
+//--------------------------------------------------
+
+
+
+
