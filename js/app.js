@@ -72,7 +72,6 @@ SalmonStore.prototype.countries = function(){
 
 };
 
-
 //-------------------------------------------
 
 
