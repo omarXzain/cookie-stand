@@ -2,6 +2,9 @@
 
 
 body{
+    background-image: url(../img/salmonx.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: rgb(177, 212, 198);
 }
 
@@ -11,6 +14,7 @@ table{
     padding: 5px;
     margin: 0 auto;
     border-radius: 5px;
+    margin-top: 15%;
 
 }
 
@@ -28,13 +32,81 @@ td{
 #divTable{
 
 
+    margin-top: -16%;
     text-align: center;
   
 }
 
-h1{
-    text-align: center;
-    color: green;
-    font-family: 'Raleway', sans-serif;
     
+
+
+#a1 {
+
+
+    background-color: hotpink;
+    border-radius: 26%;
+    margin-left: 41%;
+    margin-top: 21%;
+    padding: 4%;
+    
+}
+
+#a2 {
+
+    background-color: rgb(243, 7, 7);
+    border-radius: 15%;
+    padding: 5px;
+
+}
+
+a{
+    text-decoration: none;
+    color: bisque
+}
+
+#tZAIN{
+    color: red;
+    font-family: 'Raleway', sans-serif;
+}
+
+#Zhours{
+
+    color: rgb(41, 7, 231);
+}
+
+.chef1{
+position: absolute;
+    top: -24.5%;
+    left: 28.5%;
+    margin-top: 9.2%;
+    padding: 2%;
+    z-index: -3;
+}
+
+footer{
+
+    background-color: bisque;
+    margin-top: 9.2%;
+    padding: 2%;
+
+}
+
+/* #board{
+    position: absolute;
+    top: 43.2%;
+    width: 178px;
+} */
+#afont{
+    font-size: 50px;
+}
+
+.contact{
+    text-align: center;
+}
+
+.salamon{
+    position: absolute;
+    top: 61%;
+    left: 43%;
+    width: 14%;
 }
