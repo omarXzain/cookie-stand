@@ -12,126 +12,237 @@ function getRandomInt(min, max) {
 
 var zainStore = {
 
-var divTable = document.getElementById('divTable');
+  location : 'Seatlle',
+  minCustomers : 23,
+  maxCustomers : 65,
+  custArray: [],
+  totalCookie: 0,
+  avgCookie : 6.3,
+
+  randomCustm : function(){
+    for( var i=0; i < hours.length; i++){
+
+      this.custArray.push( getRandomInt(this.minCustomers, this.maxCustomers));
+    }
+  },
+  rendre:function(){
+    var divx = document.getElementById('htmlDiv');
+
+    var seatlleH2 = document.createElement('h2');
+    seatlleH2.textContent=this.location;
+    divx.appendChild(seatlleH2);
+
+    var ul1 = document.createElement('ul');
+    divx.appendChild(ul1);
 
 
-var table = document.createElement('table');
-divTable.appendChild(table);
+    for (var x = 0; x < hours.length; x++){
+      this.totalCookie = this.totalCookie + this.custArray[x];
+      var lix = document.createElement('li');
+      lix.textContent = hours[x] + ' ' + this.custArray[x] +' cookies';
+      ul1.appendChild(lix);
 
-var totalArray = [];
-
-//-------------------------------------------
-
-function SalmonStore(location , minCustomers , maxCustomers, avgCookie ){
-
-  this.location = location;
-  this.minCustomers = minCustomers;
-  this.maxCustomers = maxCustomers;
-  this.avgCookie = avgCookie;
-  this.custArray = [];
-  this.totalCookie = 0;
-  totalArray.push(this);
-
-  this.randomNumber();
-}
-//-------------------------------------------
-
-SalmonStore.prototype.randomNumber = function(){
-  for( var i=0; i < hours.length; i++){
-    this.custArray.push(Math.floor(getRandomInt(this.minCustomers, this.maxCustomers) * this.avgCookie));
+    }
+    var liTotal = document.createElement('li');
+    liTotal.textContent = ' Total: '+ this.totalCookie + ' cookies';
+    ul1.appendChild(liTotal);
   }
 };
+zainStore.randomCustm();
+zainStore.rendre();
 
-//--------------------------------------------
-function tableRender (){
-
-  var trMaker = document.createElement('tr');
-  table.appendChild(trMaker);
-
-  var tdName = document.createElement('td');
-  tdName.textContent = 'Table ';
-  trMaker.appendChild(tdName);
-
-  for (var x = 0; x < hours.length; x++){
-    var tdMaker = document.createElement('td');
-    tdMaker.textContent = hours[x] ;
-    trMaker.appendChild(tdMaker);
-
-
-
-  }
-}
-
-//-------------------------------------------
-
-SalmonStore.prototype.countries = function(){
-
-  var trMaker = document.createElement('tr');
-  table.appendChild(trMaker);
-
-  var tdName = document.createElement('td');
-  tdName.textContent = this.location;
-  trMaker.appendChild(tdName);
-
-  for (var x = 0; x < hours.length; x++){
-    var tdMaker = document.createElement('td');
-    tdMaker.textContent = this.custArray[x] ;
-    trMaker.appendChild(tdMaker);
-
-  }
-
-};
-
-
-//-------------------------------------------
-
-
-new SalmonStore('Seatlle', 23, 65, 6.3);
-new SalmonStore('Tokyo', 3, 24, 1.2);
-new SalmonStore('Dubai', 11, 38, 3.7);
-new SalmonStore('Paris', 20, 38, 2.3);
-new SalmonStore('Lima', 2, 16, 4.6);
-
-
-
-//-------------------------------------------
-
-tableRender();
-
-//   stores();
-for (var index = 0; index < totalArray.length; index++) {
-
-  totalArray[index].countries();
-}
-
-
-
-
-
-
-
-
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
-
-
-
-
-
-
-
-// eslint-disable-next-line no-redeclare
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
 
 
 
 //--------------------------------------------------
 
+
+var zainStore2 = {
+
+  location : 'Tokyo',
+  minCustomers : 3,
+  maxCustomers : 24,
+  custArray: [],
+  totalCookie: 0,
+  avgCookie : 1.2,
+
+  randomCustm : function(){
+    for( var i=0; i < hours.length; i++){
+
+      this.custArray.push( getRandomInt(this.minCustomers, this.maxCustomers));
+    }
+  },
+  rendre:function(){
+    var divx = document.getElementById('htmlDiv');
+
+    var seatlleH2 = document.createElement('h2');
+    seatlleH2.textContent=this.location;
+    divx.appendChild(seatlleH2);
+
+    var ul1 = document.createElement('ul');
+    divx.appendChild(ul1);
+
+
+    for (var x = 0; x < hours.length; x++){
+      this.totalCookie = this.totalCookie + this.custArray[x];
+      var lix = document.createElement('li');
+      lix.textContent = hours[x] + ' ' + this.custArray[x] +' cookies';
+      ul1.appendChild(lix);
+
+    }
+    var liTotal = document.createElement('li');
+    liTotal.textContent = ' Total: '+ this.totalCookie + ' cookies';
+    ul1.appendChild(liTotal);
+  }
+};
+zainStore2.randomCustm();
+zainStore2.rendre();
+
+
+
+//------------------------------------------------------
+
+var zainStore3 = {
+
+  location : 'Dubai',
+  minCustomers : 11,
+  maxCustomers : 38,
+  totalCookie: 0,
+  custArray: [],
+  avgCookie : 3.7,
+
+  randomCustm : function(){
+    for( var i=0; i < hours.length; i++){
+
+      this.custArray.push( getRandomInt(this.minCustomers, this.maxCustomers));
+    }
+  },
+  rendre:function(){
+    var divx = document.getElementById('htmlDiv');
+
+    var seatlleH2 = document.createElement('h2');
+    seatlleH2.textContent=this.location;
+    divx.appendChild(seatlleH2);
+
+    var ul1 = document.createElement('ul');
+    divx.appendChild(ul1);
+
+
+    for (var x = 0; x < hours.length; x++){
+      this.totalCookie = this.totalCookie + this.custArray[x];
+      var lix = document.createElement('li');
+      lix.textContent = hours[x] + ' ' + this.custArray[x] +' cookies';
+      ul1.appendChild(lix);
+
+    }
+    var liTotal = document.createElement('li');
+    liTotal.textContent = ' Total: '+ this.totalCookie + ' cookies';
+    ul1.appendChild(liTotal);
+  }
+};
+zainStore3.randomCustm();
+zainStore3.rendre();
+
+
+//-----------------------------------------------------
+
+var zainStore4 = {
+
+  location : 'Paris',
+  minCustomers : 20,
+  maxCustomers : 38,
+  totalCookie: 0,
+  custArray: [],
+  avgCookie : 2.3,
+
+  randomCustm : function(){
+    for( var i=0; i < hours.length; i++){
+
+      this.custArray.push( getRandomInt(this.minCustomers, this.maxCustomers));
+    }
+  },
+  rendre:function(){
+    var divx = document.getElementById('htmlDiv');
+
+    var seatlleH2 = document.createElement('h2');
+    seatlleH2.textContent=this.location;
+    divx.appendChild(seatlleH2);
+
+    var ul1 = document.createElement('ul');
+    divx.appendChild(ul1);
+
+
+    for (var x = 0; x < hours.length; x++){
+      this.totalCookie = this.totalCookie + this.custArray[x];
+      var lix = document.createElement('li');
+      lix.textContent = hours[x] + ' ' + this.custArray[x] +' cookies';
+      ul1.appendChild(lix);
+
+    }
+    var liTotal = document.createElement('li');
+    liTotal.textContent = ' Total: '+ this.totalCookie + ' cookies';
+    ul1.appendChild(liTotal);
+  }
+};
+zainStore4.randomCustm();
+zainStore4.rendre();
+
+
+
+
+//---------------------------------------------------
+
+
+var zainStore5 = {
+
+  location : 'Lima',
+  minCustomers : 2,
+  maxCustomers : 16,
+  custArray: [],
+  totalCookie: 0,
+  avgCookie : 4.6,
+
+  randomCustm : function(){
+    for( var i=0; i < hours.length; i++){
+
+      this.custArray.push( getRandomInt(this.minCustomers, this.maxCustomers));
+    }
+  },
+  render5:function(){
+    var divx = document.getElementById('htmlDiv');
+
+    var seatlleH2 = document.createElement('h2');
+    seatlleH2.textContent=this.location;
+    divx.appendChild(seatlleH2);
+
+    var ul1 = document.createElement('ul');
+    divx.appendChild(ul1);
+
+
+    for (var x = 0; x < hours.length; x++){
+      this.totalCookie = this.totalCookie + this.custArray[x];
+      var lix = document.createElement('li');
+      lix.textContent = hours[x] + ' ' + this.custArray[x] +' cookies';
+      ul1.appendChild(lix);
+
+
+
+    }
+    var liTotal = document.createElement('li');
+    liTotal.textContent = ' Total: '+ this.totalCookie + ' cookies';
+    ul1.appendChild(liTotal);
+  }
+};
+zainStore5.randomCustm();
+zainStore5.render5();
+
+
+
+
+
+
+
+//--------------------------------------------------
 
 
 
