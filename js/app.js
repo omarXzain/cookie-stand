@@ -26,7 +26,7 @@ var zainStore = {
     }
   },
   rendre:function(){
-    var divx = document.getElementById('htmlDiv');
+    var divx = document.getElementById('divTable');
 
     var seatlleH2 = document.createElement('h2');
     seatlleH2.textContent=this.location;
@@ -73,7 +73,7 @@ var zainStore2 = {
     }
   },
   rendre:function(){
-    var divx = document.getElementById('htmlDiv');
+    var divx = document.getElementById('divTable');
 
     var seatlleH2 = document.createElement('h2');
     seatlleH2.textContent=this.location;
@@ -118,7 +118,7 @@ var zainStore3 = {
     }
   },
   rendre:function(){
-    var divx = document.getElementById('htmlDiv');
+    var divx = document.getElementById('divTable');
 
     var seatlleH2 = document.createElement('h2');
     seatlleH2.textContent=this.location;
@@ -162,7 +162,7 @@ var zainStore4 = {
     }
   },
   rendre:function(){
-    var divx = document.getElementById('htmlDiv');
+    var divx = document.getElementById('divTable');
 
     var seatlleH2 = document.createElement('h2');
     seatlleH2.textContent=this.location;
@@ -209,7 +209,7 @@ var zainStore5 = {
     }
   },
   render5:function(){
-    var divx = document.getElementById('htmlDiv');
+    var divx = document.getElementById('divTable');
 
     var seatlleH2 = document.createElement('h2');
     seatlleH2.textContent=this.location;

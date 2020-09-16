@@ -5,32 +5,6 @@ body{
     background-color: rgb(177, 212, 198);
 }
 
-table{
-    border: solid 4px rgb(41, 7, 231) ;
-    background-color: rgb(30, 198, 210);
-    padding: 5px;
-    margin: 0 auto;
-    border-radius: 5px;
-
-}
-
-
-td{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: solid 2px rgb(216, 93, 22) ;
-    background-color: rgb(219, 150, 210);
-    padding: 3px;
-    border-radius: 11px;
-
-    
-}
-
-#divTable{
-
-
-    text-align: center;
-  
-}
 
 h1{
     text-align: center;
