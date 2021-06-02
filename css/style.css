@@ -84,13 +84,12 @@ a{
 }
 
 .chef1{
-position: absolute;
+    position: absolute;
     top: -24.5%;
-    left: 34.5%;
-    margin-top: 9.2%;
+    left: 35.5%;
+    margin-top: 10.2%;
     padding: 2%;
     z-index: -3;
-    width: 23%;
 }
 
 footer{
@@ -148,8 +147,8 @@ footer{
     padding:10px;
     width:250px;
     position: absolute;
-    top: 3%;
-    left: 76%;
+    top: 2%;
+    left: 81%;
 }
 
 
@@ -163,6 +162,58 @@ color: rgb(30, 226, 30);
 }
 
 
+#divTable{
+
+
+    animation: higher 1250ms ;
+
+  }
+  @keyframes higher {
+  
+    from {
+  
+      opacity: 0;
+      transform: matrix(4, 7, 5, 7, 2, 2);
+      
+  }
+  
+  
+  
+  to {
+  
+      opacity: 5;
+      transform: rotateX(0);
+  
+  }
+
+}
+
+td{
+
+
+animation: higherX 2.2s ;
+
+  }
+  @keyframes higherX {
+  
+    from {
+  
+      opacity: 0;
+      transform: rotateX(360deg);
+      
+  }
+  
+  
+  
+  to {
+  
+      opacity: 5;
+      transform: rotateX(0deg);
+  
+  }
+
+}
+
 #family{
     width: 100%;
     height: 287px;
@@ -174,11 +225,26 @@ input{
     border-radius: 8px;
 }
 
-.salmon{
-    width: 54%
+img#fish {
+    width: 200px;
 }
 
-#shirt{
+img#board2 {
+    width: 277px;
+}
 
-    width: 271px;
+img#board {
+    width: 177px;
+}
+
+#shirt {
+    width: 175px;
+}
+
+.center{
+    text-align: center;
+}
+
+.salmon{
+    width: 54%
 }
